@@ -8,7 +8,7 @@ def f(x, y):
     # return -y + x + 1
 
 
-def Eolur(x, y, h, n):
+def Euler(x, y, h, n):
     E = [y]
     for i in range(0, n):
         y = y + h * f(x, y)
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     y0 = 0
     h = 0.1
     n = 11
-    E = Eolur(x0, y0, h, n)
+    E = Euler(x0, y0, h, n)
     T = trapezoid(x0, y0, h, n)
     S = solution(x0, h, n)
     for i in range(1, n):
