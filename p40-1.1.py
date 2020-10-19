@@ -48,5 +48,5 @@ if __name__ == '__main__':
     E = Eolur(x0, y0, h, n)
     T = trapezoid(x0, y0, h, n)
     S = solution(x0, h, n)
-    for i in range(0, n):
-        print("%.6f" % E[i], "%.6f" % T[i], "%.6f" % S[i])
+    for i in range(1, n):
+        print(i, "%.6f" % E[i], "%.6f" % T[i], "%.6f" % S[i],"%.6f" %(E[i]-S[i]),"%.6f" %(T[i]-S[i]))
